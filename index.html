@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/js" href="js/app.js">
+        <link rel="stylesheet" type="text/js" href="js/show-on-scroll.js">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/scroll.css">
+          <link rel="stylesheet" type="text/css" href="css/oy.css">
+            <link rel="stylesheet" type="text/css" href="css/slider.css">
+            <link rel="stylesheet" type="text/css" href="css/infodesing.css">
+            <link rel="stylesheet" type="text/css" href="css/about.css">
+              <link rel="stylesheet" type="text/css" href="css/info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ggw2mak.css">
+
+
+
+    <title>MartineSaxebol</title>
+
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">
+          <h1>by Martine Saxebøl</h1>
+        </div>
+
+          <ul class="navlinks">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+                <li>
+                  <a href="Design.html">Design</a>
+                </li>
+
+                  <li>
+                    <a href="Work.html">Art</a>
+                  </li>
+
+                    <li>
+                      <a href="About.html">About</a>
+                    </li>
+            </ul>
+
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+
+          </div>
+
+          </nav>
+
+<script>
+const navSlide = ()=> {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.navlinks');
+  const navlinks = document.querySelectorAll('.navlinks li');
+
+//Toggle Links
+  burger.addEventListener('click',()=>{
+    nav.classList.toggle('nav-active');
+  });
+
+  //Animate Links
+  navlinks.forEach((link, index) => {
+    link.style.animate = `navLinkFade 05s ease forwards ${index / 7 + 1}s`;
+
+
+  });
+}
+
+  navSlide();
+
+  </script>
+
+  <br>
+
+
+
+  <div class="info_section">
+    <div class="dott"></div>
+      <div class="dott1"></div>
+        <div class="dott2"></div>
+        <div class="dott3"></div>
+        <div class="dott4"></div>
+        <div class="dott5"></div>
+        <div class="dott6"></div>
+        <div class="dott7"></div>
+        <div class="dott8"></div>
+
+  </div>
+
+            <div class="info_section1">
+              <div class="hoyre">
+                <h7>Hi! Welcome</h7>
+                  <h8> My name is Martine Saxebøl
+                    <bR>
+                     I am a designer & developer. In my design I focus on<br> moments, experiences, fun, openness,
+                     innovation & structur.
+                    <br>
+                    <br>
+
+                    <br>  I a master student in Design at The Oslo School of Architecture & Design.<br>
+                    I work across disciplines with Interaction design, Experietal & service design<br>
+                     Industrial design & System Oriented design.
+                  </h8>
+
+          </div>
+
+        </div>
+        
+
+
+
+
+
+
+
+  <div class="eyes">
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var balls = document.getElementsByClassName("ball");
+      document.onmousemove = function(){
+        var x = event.clientX * 100 / window.innerWidth + "%";
+        var y = event.clientY * 100 / window.innerHeight + "%";
+
+        for(var i=0; i<2; i++){
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-"+x+",-"+y+")";
+        }
+      }
+    </script>
+
+  </div>
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br>
+
+
+        <div class="gruppe3">
+
+          <div class="bla"><h9>MY</h9><br>
+
+            <div class="firkant"><h12>Education</h12><br><h11>
+              Master in design d.d 3 year<br>
+              The Oslo school of Arcitectur and Design
+              <br><br>
+                  Technologydesign and management<br>
+              Norwegian University of Science and Technology<br>
+            </h11>
+
+                <br><br>
+                <h12>Tools</h12><br>
+                <h11>HTML/CSS, Java script, Illustrator, Indesign,
+                  Photoshop, Figma, SolidWorks, Fusion, Adobe XD & Premier pro  </h11>
+
+
+                  <br><br>
+                  <h12>How I work</h12><br>
+                  <h11>Sevice & experience design<br>
+                    Mapping, intervju, personas, fieldwork,
+                    moodbords, bodystorming, brainstorming, mindmapping
+                     brainwirting, drawing, paper prototyping<br> & Wizard of OZ.
+                     <br><br>
+
+                     Service journeys, costume journeys,  backstage and frontstage,
+                      business model canvas, value proposition m.m<br><br>
+
+                      System Oriented design
+                      <br> Timeline, ZIP analysis, Systemic mapping, gigamapping
+                      <br><br>
+
+                      Web, app & products<br>
+                      UX, IX, Prototyping, developing & wireframing.
+                        <br><br>
+                        User oriented design<br>
+                        User/using analysis</h11>
+
+
+
+                                <br><br>
+                                <h12>Sounds interesting?</h12><br>
+                                <h11> Do you want me to do you interaction,
+                                  service, graphics or product design?
+                                  <br><br>Contact me at:
+                                  <br>
+                                  martinesaxebol@hotmail.com
+                                </h11>
+                                </div>
+
+        </div>
+
+
+        <div class="bla">
+          <div class="firkant">
+
+            <button type="button"><a href="Design.html"><h5>Selected work</h5></a></button>
+            <br><br><br><br><br><br><br><br>
+        <img src="img /me.jpg" class="inline-photo show-on-scroll" style="width:100%">
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+      <script>
+      window.addEventListener('scroll', function() {
+        console.log("Scrollin'");
+      });
+      var scroll = window.requestAnimationFrame ||
+                  function(callback){ window.setTimeout(callback, 1000/60)};
+      var elementsToShow = document.querySelectorAll('.show-on-scroll');
+      function loop() {
+        elementsToShow.forEach(function (element) {
+          if (isElementInViewport(element)) {
+            element.classList.add('is-visible');
+          } else {
+            element.classList.remove('is-visible');
+          }
+        });
+
+        scroll(loop);
+      }
+      loop();
+      function isElementInViewport(el) {
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+          (rect.top <= 0
+            && rect.bottom >= 0)
+          ||
+          (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+          ||
+          (rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+      }
+      </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

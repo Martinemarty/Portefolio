@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/infodesing.css">
+        <link rel="stylesheet" type="text/js" href="js/app.js">
+        <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ggw2mak.css">
+
+
+
+    <title>MartineSaxebol</title>
+
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">
+          <h1>by Martine Saxebøl</h1>
+        </div>
+
+          <ul class="navlinks">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+                <li>
+                  <a href="Design.html">Design</a>
+                </li>
+
+                  <li>
+                    <a href="Work.html">Art</a>
+                  </li>
+
+                    <li>
+                      <a href="About.html">About</a>
+                    </li>
+            </ul>
+
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+
+          </div>
+
+          </nav>
+
+<script>
+const navSlide = ()=> {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.navlinks');
+  const navlinks = document.querySelectorAll('.navlinks li');
+
+//Toggle Links
+  burger.addEventListener('click',()=>{
+    nav.classList.toggle('nav-active');
+  });
+
+  //Animate Links
+  navlinks.forEach((link, index) => {
+    link.style.animate = `navLinkFade 05s ease forwards ${index / 7 + 1}s`;
+
+
+  });
+}
+
+  navSlide();
+
+  </script>
+
+
+
+    <div class="gruppe1">
+
+      <div class="venstre"><h2>Carpe Diem</h2>
+      <h3>Carpe Diem a mother-daughter lamp for the demented in nursing homes.
+         Which should contribute to coping, security and well-being.
+         <br>
+         <br>
+         <br>
+         The mother lamp (foot) provides spacious light while the daughter
+          lamp provides direct light.
+
+
+
+
+        </h3>
+        <br>
+        <br>
+
+      <h4>Project duration: 3 Months<br>
+          Course: Introduction to design 2.semester<br>
+          Task: Lamp for the elderly(collaboration with Glamox) <br>
+          Collaboration: Jenny Duus & Jakob Skarveland <br>
+          <a href="">Rapport: Carpe Diem</a><br>
+          Programs: Indeisgn, Phototshop & Illustrator
+
+        </h4>
+        <img src="img /gripdagen/n.jpg" class="inline-photo show-on-scroll" style="width:100%">
+
+
+
+
+
+    </div>
+
+    <div class="venstre">
+    <img src="img /gripdagen/good2.jpg" class="inline-photo show-on-scroll" style="width:100%" >
+    <h5>Carpe Diem is designed with strong color contrasts for reduced vision.
+    <br><br><br><br><br><br><br><br><br><br><br><br>The round shape is soft and has no sharp edges. Which gives a caring and comfortable shape</h5>
+    <img src="img /gripdagen/r.jpg" class="inline-photo show-on-scroll " style="width:100%">
+
+  </div>
+
+</div>
+
+<div class="gruppe2">
+  <div class="venstre">
+    <h3> In collab with nursing homes</h3>
+    <img src="img /gripdagen/panatt.001.jpeg" class="inline-photo show-on-scroll " style="width:100%">
+
+
+</div>
+
+<div class="venstre">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>Interaction with Carpe Diem</h3>
+    <img src="img /gripdagen/skissen.003.jpeg" class="inline-photo show-on-scroll " style="width:100%">
+</div>
+<div class="venstre">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>A close and caring porcess & development</h3>
+  <img src="img /gripdagen/skissen.002.jpeg" class="inline-photo show-on-scroll " style="width:100%">
+
+
+</div>
+
+</div>
+
+
+
+
+  <script>
+  window.addEventListener('scroll', function() {
+    console.log("Scrollin'");
+  });
+  var scroll = window.requestAnimationFrame ||
+              function(callback){ window.setTimeout(callback, 1000/60)};
+  var elementsToShow = document.querySelectorAll('.show-on-scroll');
+  function loop() {
+    elementsToShow.forEach(function (element) {
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+  }
+  loop();
+  function isElementInViewport(el) {
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
+  </script>
+
+
+
+
+</body>
+
+
+</html>

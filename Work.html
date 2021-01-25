@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/design.css">
+        <link rel="stylesheet" type="text/js" href="js/app.js">
+        <link rel="stylesheet" href="https://use.typekit.net/ggw2mak.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>MartineSaxebol</title>
+
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">
+          <h1>by Martine Saxebøl</h1>
+        </div>
+
+          <ul class="navlinks">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+                <li>
+                  <a href="Design.html">Design</a>
+                </li>
+
+                  <li>
+                    <a href="Work.html">Art</a>
+                  </li>
+
+                    <li>
+                      <a href="About.html">About</a>
+                    </li>
+            </ul>
+
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+
+          </div>
+
+          </nav>
+
+<script>
+const navSlide = ()=> {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.navlinks');
+  const navlinks = document.querySelectorAll('.navlinks li');
+
+//Toggle Links
+  burger.addEventListener('click',()=>{
+    nav.classList.toggle('nav-active');
+  });
+
+  //Animate Links
+  navlinks.forEach((link, index) => {
+    link.style.animate = `navLinkFade 05s ease forwards ${index / 7 + 1}s`;
+
+
+  });
+}
+
+  navSlide();
+
+  </script>
+
+
+  <!-- Photo Grid -->
+  <div class="row">
+    <div class="column">
+        <img src="img /egnep/IMG_6207.jpg" class="inline-photo show-on-scroll" style="width:100%">
+        <img src="img /egnep/IMG_6370.jpg" class="inline-photo show-on-scroll" style="width:100%">
+
+
+    </div>
+
+    <div class="column">
+
+    <img src="img /egnep/IMG_6302.jpg" class="inline-photo show-on-scroll" style="width:100%">
+    <img src="img /egnep/IMG_6219.jpg" class="inline-photo show-on-scroll" style="width:100%">
+
+    </div>
+    <div class="column">
+    <img src="img /egnep/IMG_8543 2-2.jpg" class="inline-photo show-on-scroll" style="width:100%">
+    <img src="img /egnep/IMG_6384-2.jpg" class="inline-photo show-on-scroll" style="width:100%">
+
+
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+                  <script>
+                  window.addEventListener('scroll', function() {
+                    console.log("Scrollin'");
+                  });
+                  var scroll = window.requestAnimationFrame ||
+                              function(callback){ window.setTimeout(callback, 1000/60)};
+                  var elementsToShow = document.querySelectorAll('.show-on-scroll');
+                  function loop() {
+                    elementsToShow.forEach(function (element) {
+                      if (isElementInViewport(element)) {
+                        element.classList.add('is-visible');
+                      } else {
+                        element.classList.remove('is-visible');
+                      }
+                    });
+
+                    scroll(loop);
+                  }
+                  loop();
+                  function isElementInViewport(el) {
+                    if (typeof jQuery === "function" && el instanceof jQuery) {
+                      el = el[0];
+                    }
+                    var rect = el.getBoundingClientRect();
+                    return (
+                      (rect.top <= 0
+                        && rect.bottom >= 0)
+                      ||
+                      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+                      ||
+                      (rect.top >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+                    );
+                  }
+                  </script>
+
+
+
+</body>
+
+
+</html>

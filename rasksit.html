@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/infodesing.css">
+        <link rel="stylesheet" type="text/js" href="js/app.js">
+        <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ggw2mak.css">
+
+
+
+    <title>MartineSaxebol</title>
+
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">
+          <h1>by Martine Saxebøl</h1>
+        </div>
+
+          <ul class="navlinks">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+                <li>
+                  <a href="Design.html">Design</a>
+                </li>
+
+                  <li>
+                    <a href="Work.html">Art</a>
+                  </li>
+
+                    <li>
+                      <a href="About.html">About</a>
+                    </li>
+            </ul>
+
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+
+          </div>
+
+          </nav>
+
+<script>
+const navSlide = ()=> {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.navlinks');
+  const navlinks = document.querySelectorAll('.navlinks li');
+
+//Toggle Links
+  burger.addEventListener('click',()=>{
+    nav.classList.toggle('nav-active');
+  });
+
+  //Animate Links
+  navlinks.forEach((link, index) => {
+    link.style.animate = `navLinkFade 05s ease forwards ${index / 7 + 1}s`;
+
+
+  });
+}
+
+  navSlide();
+
+  </script>
+
+
+
+    <div class="gruppe1">
+
+      <div class="venstre"><h2>Fast sit</h2>
+      <h3>Fast sit is an outdoor piece of furniture designed for smaller balconies.
+         Through flexible use, space efficiency, this seating unit opens up for varied use.
+           <br><br><br>
+           Fast sit is 1x1 m, and the protoype is a scale model 1: 5.
+           <br>
+
+
+
+        </h3>
+        <br>
+        <br>
+
+      <h4>Project duration: 4 weeks <br>
+          Course: Industrial design in context 4.semester<br>
+          Task: outdoor furniture  <br>
+          Collaboration: Luca Verde <br>
+          <a href="">Rapport:Fast Sit(Norwegian)</a><br>
+          Programs: Solidworks, fusion, photoshop og indesign <br>
+
+        </h4>
+        <img src="img /rasksit/r1.jpeg" class="inline-photo show-on-scroll" style="width:100%">
+
+        <h6></h6>
+
+
+
+
+
+    </div>
+
+    <div class="venstre">
+    <img src="img /rasksit/RASKSIT.JPG" class="inline-photo show-on-scroll" style="width:100%" >
+    <h5>The balconie furniture is a seating unit
+    designed for varied and comfortable use.
+    <br><br><br><br><br><br><br>
+
+    The frame is made of impregnated pine and is packed together by
+    weaving the wooden strips together and can form a compact shape.
+
+    <br><br>
+     The mat itself is made of recycled seat belts which provides a solid,
+      sustainable and comfortable sitting experience. The mat can be removed
+      completely and used in other environments.
+
+    </h5>
+    <img src="img /rasksit/r2.jpeg" class="inline-photo show-on-scroll " style="width:100%">
+
+  </div>
+
+</div>
+
+
+
+<div class="gruppe2">
+
+<div class="venstre">
+  <br>
+  <br>
+  <br>
+  <br>
+    <img src="img /rasksit/re.001.jpeg" class="inline-photo show-on-scroll " style="width:100%">
+
+</div>
+
+
+
+<div class="venstre">
+  <h5>Fast sit works with Quick - release assembly.<br><br><br>
+    That is a locking mechanism designed to lock bicycles
+    and acts as a quick solution for loosening and tightening.
+
+     The principle will work in the same way as the wing nuts,
+   but will shorten the process and use less space.</h5>
+  <img src="img /rasksit/RASKSIT.002.jpeg" class="inline-photo show-on-scroll " style="width:100%">
+
+
+</div>
+
+</div>
+
+
+
+  <script>
+  window.addEventListener('scroll', function() {
+    console.log("Scrollin'");
+  });
+  var scroll = window.requestAnimationFrame ||
+              function(callback){ window.setTimeout(callback, 1000/60)};
+  var elementsToShow = document.querySelectorAll('.show-on-scroll');
+  function loop() {
+    elementsToShow.forEach(function (element) {
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+  }
+  loop();
+  function isElementInViewport(el) {
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
+  </script>
+
+
+
+
+</body>
+
+
+</html>
