@@ -1,0 +1,95 @@
+
+
+.firkant{
+z-index: 999999;
+background-color: transparent;
+animation: mymove 15s infinite;
+display: inline-block;
+ vertical-align: middle;
+ padding: 1vh 5vw;
+}
+
+/*.firkant1{
+z-index: 999999;
+background-color: transparent;
+animation: mymove 15s infinite;
+display: inline-block;
+ vertical-align: middle;
+ padding: 1px 20vw;
+}*/
+
+h9{
+  font-family: sofia-pro;
+  color: #33A9AC;
+  letter-spacing: 2px;
+  font-weight:lighter;
+  line-height: 3vh;
+  font-size: 10vw;
+  z-index: 99999999;
+  margin-top: -300px;
+
+
+
+}
+
+
+
+h10{
+  color: #33A9AC;
+  font-family: sofia-pro;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10vw;
+
+
+
+
+}
+
+h12{
+  color: black;
+  font-family: sofia-pro;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: bold;
+
+
+
+
+}
+
+h11{
+  text-align:center;
+  font-family: sofia-pro;
+  color: black;
+  letter-spacing: 1px;
+  font-weight:lighter;
+  line-height: 3vh;
+  font-size: 20px;
+  z-index: 99999999;
+
+
+
+}
+
+/*h13{
+    text-align:center;
+    font-family: sofia-pro;
+    color: black;
+    letter-spacing: 1px;
+    font-weight:lighter;
+    line-height: 3vh;
+    font-size: 20px;
+    z-index: 99999999;
+    display: flex;
+    position:fixed;
+    margin-left: 60vw;
+    top:80vh;
+
+      <h13>Contact: martinesaxebol@hotmail.com<h13>
+
+}*/
+
+/*      <a href="treD.html"><img src="img /egnep/IMG_6351.jpg" class="inline-photo show-on-scroll" style="width:100%"></a>
+*/

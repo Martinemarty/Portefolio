@@ -1,0 +1,50 @@
+
+
+.eyes{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+}
+.eye{
+	width: 20vw;
+	height: 10vh;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	position: relative;
+	margin: 0 40px;
+}
+.ball{
+	width: 20px;
+	height: 20px;;
+	border-radius: 50%;
+	background-color: black;
+	/*border: 15px solid #333;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.shape img{
+	width: 40%;
+}
+/*
+
+<div class="contact"><h9>Enjoy<br>My portefolio</h9></div>
+
+.contact{
+	margin-top: 20vh;
+}
+
+h9{
+	color: black;
+  font-family: sofia-pro;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: bold;
+	float: right;
+	margin-right: 10vw;
+
+}
